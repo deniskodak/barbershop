@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(mobile) {
+    width: 480px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+.section-features {
+  @extend .section;
+
+  .features-box {
+    margin-bottom: 44px;
+  }
+
+  .text-label {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+
+    @extend %title;
+    font-size: 42px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    line-height: 1.62;
+    color: $secondaryCl;
+  }
+}

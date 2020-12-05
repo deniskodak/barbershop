@@ -1,0 +1,30 @@
+.hero-box {
+  padding-top: 208px;
+  padding-bottom: 183px;
+
+  .text-label {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    @extend %title;
+    font-size: 48px;
+    color: $white;
+
+    margin-bottom: 20px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+    color: $subtitleCl;
+  }
+}
+.socials-list.company {
+  display: none;
+}
+
+.toggles-list {
+  display: none;
+}

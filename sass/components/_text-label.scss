@@ -1,0 +1,23 @@
+.text-label {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: currentColor;
+  }
+}
+.text-label.color {
+  color: $labelCl;
+}

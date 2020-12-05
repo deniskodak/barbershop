@@ -1,0 +1,14 @@
+.section-team {
+  @extend .section;
+  background-color: $primaryBg;
+
+  .text-label {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 44px;
+    @extend %title;
+    font-size: 42px;
+  }
+}

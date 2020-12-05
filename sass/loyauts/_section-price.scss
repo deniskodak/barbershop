@@ -1,0 +1,25 @@
+.section-price {
+  @extend .section;
+  background-color: $priceBg;
+  background-image: url('../../images/section-price/price-mobile.png');
+
+  .text-label {
+    margin-bottom: 20px;
+  }
+  .title {
+    margin-bottom: 44px;
+
+    @extend %title;
+    font-size: 42px;
+    color: white;
+  }
+
+  .book-btn {
+    @extend .button;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $white;
+  }
+}

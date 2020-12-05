@@ -1,7 +1,19 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+// * {
+//   outline: 1px solid red;
+// }
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0.02em;
   color: $primaryCl;
 }
 img {
@@ -14,7 +26,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }

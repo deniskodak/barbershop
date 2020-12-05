@@ -1,0 +1,9 @@
+.portfolio-list {
+  @extend %list;
+
+  .portfolio-item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

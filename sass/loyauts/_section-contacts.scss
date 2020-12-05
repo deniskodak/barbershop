@@ -1,0 +1,12 @@
+.section-contacts {
+  @extend .section;
+  background-color: $secondaryBg;
+
+  .title {
+    margin-bottom: 44px;
+
+    @extend %title;
+    font-size: 42px;
+    color: $white;
+  }
+}

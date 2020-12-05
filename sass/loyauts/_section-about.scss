@@ -1,0 +1,36 @@
+.section-about {
+  @extend .section;
+
+  .about-list {
+    @extend %list;
+    display: none;
+  }
+
+  .text-label {
+    margin-bottom: 20px;
+  }
+  .title {
+    margin-bottom: 20px;
+
+    @extend %title;
+    font-size: 28px;
+  }
+  .sub-title {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.62;
+    color: $secondaryCl;
+  }
+
+  .text {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 1.86;
+    color: $secondaryCl;
+  }
+  .book-btn {
+    @extend .button;
+  }
+}

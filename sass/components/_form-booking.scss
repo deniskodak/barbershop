@@ -1,0 +1,39 @@
+.form-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.label-signup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $labelCl;
+
+  transition: transform 250ms linear;
+}
+
+.input-signup {
+  display: block;
+  width: 100%;
+  padding-bottom: 8px;
+  background-color: transparent;
+  border-bottom: 1px solid $labelCl;
+
+  &:focus + .label-signup {
+    color: $white;
+    transform: translateY(-210%);
+  }
+  &:focus {
+    border-bottom-color: $white;
+  }
+}
+.textarea-signup {
+  display: block;
+  width: 100%;
+}

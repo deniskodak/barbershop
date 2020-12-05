@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid $accentCl;
+  border-radius: 25px;
+  background-color: transparent;
+
+  transition: background-color 250ms linear, color 250ms ease 50ms;
+
+  &:hover,
+  &:focus {
+    background-color: $accentCl;
+    color: $white;
+  }
+}

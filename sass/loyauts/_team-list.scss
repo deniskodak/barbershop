@@ -1,0 +1,30 @@
+.team-list {
+  @extend %list;
+
+  .team-item {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+}
+.team-content {
+  padding-top: 30px;
+
+  .team-title {
+    margin-bottom: 8px;
+
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.389;
+    text-align: center;
+  }
+
+  .team-status {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.357;
+    color: $accentCl;
+    text-align: center;
+  }
+}
