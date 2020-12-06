@@ -2,7 +2,7 @@
   @extend .section;
 
   background-color: $secondaryBg;
-  background-image: url(../../images/section-contacts/contacts-mobile.png);
+  background-image: url('../images/section-contacts/contacts-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,5 +14,8 @@
     font-size: 42px;
     color: $white;
     text-align: center;
+  }
+  .contacts-box {
+    font-style: normal;
   }
 }
