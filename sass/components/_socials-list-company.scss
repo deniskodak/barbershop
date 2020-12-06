@@ -1,0 +1,25 @@
+.socials-list-company {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &::before {
+    display: block;
+    content: '';
+    margin-right: 40px;
+    height: 1px;
+    width: 60px;
+    background-color: currentColor;
+  }
+
+  .socials-item {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.363;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}

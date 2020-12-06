@@ -1,0 +1,16 @@
+.section-footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  background-color: $primaryBg;
+
+  .copy-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.363;
+    color: $subtitleCl;
+
+    .copyright {
+      margin-right: 6px;
+    }
+  }
+}

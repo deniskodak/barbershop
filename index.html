@@ -66,7 +66,7 @@
                 <p class="sub-title">Мы эксперты в модных мужских стрижках.
                 Работаем быстро, осторожно и со вкусом.</p>
                 </div>
-                <ul class="socials-list company">
+                <ul class="socials-list-company">
                     <li class="socials-item">Instagram</li>
                     <li class="socials-item">Youtube</li>
                 </ul>
@@ -341,48 +341,58 @@
             </div>
         </section>
 
-        <section class="section-contacts">
+        <section class="section-booking">
             <div class="container">
                 <h2 class="title">Онлайн-запись</h2>
                 <form action="" class="form-booking" autocomplete="off">
                     <div class="form-field">
-                        <input type="text" class="input-signup" name="name" id="name" required>
+                        <input type="text" class="input-signup" name="name" id="name" placeholder=" " required>
                         <label class="label-signup" for="name">Имя*</label>
                     </div>
                     <div class="form-field">
-                        <input type="tel" class="input-signup" name="telephone" id="telephone" required>
+                        <input type="tel" class="input-signup" name="telephone" id="telephone" placeholder=" " required>
                         <label class="label-signup" for="telephone">Телефон*</label>
                     </div>
                     <div class="form-field">
-                        <textarea class="textarea-signup" id="comment" name="comment" cols="30" rows="10"></textarea>
-                        <label class="label-signup" for="comment">сообщение</label>
+                        <textarea class="textarea-signup" id="comment" name="comment" placeholder=" " cols="30" rows="3"></textarea>
+                        <label class="label-signup comment" for="comment">сообщение</label>
                     </div>
                     <button class="send-btn" type="submit">отправить</button>
                 </form>
+        </section>
+
+        <section class="section-contacts">
+            <div class="container">
                 <div class="contacts-box">
                     <h2 class="title">Контакты</h2>
                     <ul class="contacts-list">
                         <li class="contacts-item">
-                            <a href="" class="contacts-link">ул. Васильковая, 7А
+                            <a href="#" class="contacts-link">ул. Васильковая, 7А
                             Киев, 08132</a></li>
                         <li class="contacts-item">
-                            <a href="" class="contacts-link">+38 044 111 11 11</a></li>
+                            <a href="#" class="contacts-link">+38 044 111 11 11</a></li>
                         <li class="contacts-item">
-                            <a href="" class="contacts-link">barbershop@email.com</a></li>
+                            <a href="#" class="contacts-link mail">
+                                barbershop@email.com</a></li>
                     </ul>
                     <div class="hours-box">
-                        <h3 class="hours-title">время работы</h3>
+                        <p class="text-label">время работы</p>
                         <p class="hours-text">Ежедневно с 9:00 до 22:00</p>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
-    <!-- <footer class="section-footer">
-        <p class="copy-text">Copyright 2020</p>
-        <ul class="socials-list company">
-            <li class="socials-item">Instagram</li>
-            <li class="socials-item">Youtube</li>
-        </ul>
-    </footer> -->
+
+    <footer class="section-footer">
+        <div class="container">
+            <ul class="socials-list-company">
+                <li class="socials-item">Instagram</li>
+                <li class="socials-item">Youtube</li>
+            </ul>
+            <p class="copy-text"><span class="copyright">&COPY;</span>Copyright 2020</p>
+        </div>
+    </footer>
+
 </body>

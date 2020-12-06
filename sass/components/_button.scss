@@ -5,13 +5,14 @@
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
   border: 1px solid $accentCl;
   border-radius: 25px;
   background-color: transparent;
+  outline: none;
 
   transition: background-color 250ms linear, color 250ms ease 50ms;
 

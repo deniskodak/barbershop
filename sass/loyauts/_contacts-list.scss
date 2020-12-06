@@ -1,0 +1,62 @@
+.contacts-list {
+  @extend %list;
+  margin-bottom: 44px;
+}
+
+.contacts-item {
+  position: relative;
+  padding-left: 40px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.contacts-item {
+  &:nth-child(1)::before {
+    background-image: url('../../images/section-contacts/map-pin.svg');
+  }
+  &:nth-child(2)::before {
+    background-image: url('../../images/section-contacts/phone.svg');
+  }
+  &:nth-child(3)::before {
+    background-image: url('../../images/section-contacts/mail.svg');
+  }
+}
+
+.contacts-link {
+  line-height: 1.67;
+  color: $subtitleCl;
+  text-decoration: none;
+
+  &.mail {
+    text-decoration: underline;
+  }
+}
+
+.hours-box {
+  .text-label {
+    margin-bottom: 20px;
+    color: $white;
+    &::before {
+      background-color: $labelCl;
+    }
+  }
+  .hours-text {
+    line-height: 1.67;
+    color: $subtitleCl;
+  }
+}

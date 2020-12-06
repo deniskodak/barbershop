@@ -2,30 +2,47 @@
   position: relative;
   margin-bottom: 44px;
 }
-
-.label-signup {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
+.label-signup,
+.input-signup,
+.textarea-signup {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.363;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: $white;
+}
+.label-signup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
   color: $labelCl;
 
   transition: transform 250ms linear;
+
+  &.comment {
+    top: 0;
+  }
 }
 
-.input-signup {
+.input-signup,
+.textarea-signup {
   display: block;
   width: 100%;
   padding-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+
   background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
   border-bottom: 1px solid $labelCl;
 
-  &:focus + .label-signup {
+  &:focus + .label-signup,
+  &:not(:placeholder-shown) + .label-signup {
     color: $white;
     transform: translateY(-210%);
   }
@@ -34,6 +51,18 @@
   }
 }
 .textarea-signup {
+  padding-top: 0;
+  height: 75px;
+}
+
+.send-btn {
+  @extend .button;
+
   display: block;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-right: 38px;
+  padding-left: 38px;
+  color: $white;
 }
