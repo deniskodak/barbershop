@@ -310,6 +310,10 @@ p {
   background-size: cover;
 }
 
+.section-hero .socials-list-company {
+  display: none;
+}
+
 .hero-box {
   padding-top: 208px;
   padding-bottom: 183px;
@@ -330,10 +334,6 @@ p {
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-}
-
-.socials-list-company {
-  display: none;
 }
 
 .toggles-list {
