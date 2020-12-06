@@ -1,15 +1,30 @@
 .menu-btn {
+  position: relative;
   display: block;
+  z-index: 4;
   width: 40px;
   height: 40px;
   background-color: transparent;
+  border: none;
 
-  .icon {
+  .icon-burger {
     fill: $white;
+  }
+  .icon-close {
+    fill: $primaryCl;
+    display: none;
   }
 
   &:hover .icon,
   &:focus .icon {
     fill: $accentCl;
+  }
+}
+.menu-btn.is-open {
+  .icon-burger {
+    display: none;
+  }
+  .icon-close {
+    display: block;
   }
 }

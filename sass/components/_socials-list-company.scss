@@ -5,7 +5,8 @@
   justify-content: flex-end;
 
   &::before {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     content: '';
     margin-right: 40px;
     height: 1px;

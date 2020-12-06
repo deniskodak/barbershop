@@ -27,13 +27,13 @@
 }
 .contacts-item {
   &:nth-child(1)::before {
-    background-image: url('../../images/section-contacts/map-pin.svg');
+    background-image: url('../images/section-contacts/map-pin.svg');
   }
   &:nth-child(2)::before {
-    background-image: url('../../images/section-contacts/phone.svg');
+    background-image: url('../images/section-contacts/phone.svg');
   }
   &:nth-child(3)::before {
-    background-image: url('../../images/section-contacts/mail.svg');
+    background-image: url('../images/section-contacts/mail.svg');
   }
 }
 

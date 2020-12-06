@@ -1,8 +1,15 @@
 .section-price {
   @extend .section;
   background-color: $priceBg;
-  background-image: url('../../images/section-price/price-mobile.png');
+  background-image: url('../images/section-price/price-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/section-price/price-mobile@2x.png');
+  }
   .text-label {
     margin-bottom: 20px;
   }

@@ -1,0 +1,88 @@
+.mobile-navigation {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 118px 40px;
+
+  font-weight: 600;
+  line-height: 1.389;
+  letter-spacing: 0.1em;
+
+  background-color: $white;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
+    -1px 0px 3px rgba(0, 0, 0, 0.16);
+
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+  pointer-events: none;
+  visibility: hidden;
+}
+.mobile-navigation.is-open {
+  transform: translateX(0%);
+  pointer-events: initial;
+  visibility: visible;
+}
+.mobile-menu {
+  @extend %list;
+  margin-bottom: 64px;
+
+  .menu-item {
+    &:hover,
+    &:focus {
+      color: $accentCl;
+    }
+  }
+  .menu-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.mobile-navigation {
+  .link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $accentCl;
+    }
+  }
+  .tel-link {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  .book-btn {
+    @extend .button;
+    display: block;
+    margin-bottom: 64px;
+
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .socials-list-company {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .socials-item {
+      font-size: 14px;
+      line-height: 1.357;
+      letter-spacing: 0.2em;
+      &:hover,
+      &:focus {
+        color: $accentCl;
+      }
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+    &::before {
+      margin-top: 8px;
+    }
+  }
+}

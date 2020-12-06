@@ -4,8 +4,13 @@
   background-color: $secondaryBg;
   background-image: url('../images/section-contacts/contacts-mobile.png');
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/section-contacts/contacts-mobile@2x.png');
+  }
 
   .title {
     margin-bottom: 40px;
