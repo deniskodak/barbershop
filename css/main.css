@@ -397,6 +397,11 @@ p {
   fill: #ff6c00;
 }
 
+.menu-btn.is-open {
+  position: fixed;
+  right: 31px;
+}
+
 .menu-btn.is-open .icon-burger {
   display: none;
 }

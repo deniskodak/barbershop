@@ -21,6 +21,8 @@
   }
 }
 .menu-btn.is-open {
+  position: fixed;
+  right: 31px;
   .icon-burger {
     display: none;
   }
