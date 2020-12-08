@@ -7,6 +7,9 @@
   background-color: transparent;
   border: none;
 
+  @include for-size(tablet) {
+    display: none;
+  }
   .icon-burger {
     fill: $white;
   }

@@ -1,5 +1,5 @@
 .section-hero {
-  background-color: rgba(25, 28, 38, 0.2);
+  // background-color: rgba(25, 28, 38, 0.2);
   background-image: url('../images/section-hero/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,6 +8,16 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/section-hero/hero-mobile@2x.jpg');
+  }
+
+  @include for-size(tablet) {
+    background-image: url('../images/section-hero/hero-tablet.jpg');
+    background-position: 159px top;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/section-hero/hero-tablet@2x.jpg');
+    }
   }
   .socials-list-company {
     display: none;

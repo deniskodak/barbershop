@@ -12,15 +12,62 @@
     background-image: url('../images/section-contacts/contacts-mobile@2x.png');
   }
 
+  @include for-size(tablet) {
+    background-image: url('../images/section-contacts/contacts-tablet.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/section-contacts/contacts-tablet@2x.png');
+    }
+  }
+
+  .container {
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
   .title {
     margin-bottom: 40px;
 
     @extend %title;
     font-size: 42px;
     color: $white;
-    text-align: center;
+
+    @include for-size(mobile-only) {
+      text-align: center;
+    }
+
+    @include for-size(tablet) {
+      width: 100%;
+    }
   }
   .contacts-box {
     font-style: normal;
+
+    @include for-size(tablet) {
+      margin-right: 30px;
+      width: calc((100% - 30px) / 2);
+    }
+  }
+
+  .hours-box {
+    @include for-size(tablet) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    .text-label {
+      margin-bottom: 20px;
+      color: $white;
+      &::before {
+        background-color: $labelCl;
+      }
+    }
+
+    .hours-text {
+      line-height: 1.67;
+      color: $subtitleCl;
+    }
   }
 }

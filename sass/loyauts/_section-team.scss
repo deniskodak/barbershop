@@ -12,3 +12,11 @@
     font-size: 42px;
   }
 }
+
+.team-box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

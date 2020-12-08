@@ -1,10 +1,11 @@
+.about-container {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
 .section-about {
   @extend .section;
-
-  .about-list {
-    @extend %list;
-    display: none;
-  }
 
   .text-label {
     margin-bottom: 20px;
@@ -32,5 +33,10 @@
   }
   .book-btn {
     @extend .button;
+  }
+}
+.about-content {
+  @include for-size(tablet) {
+    width: calc((100%-30px) / 2);
   }
 }

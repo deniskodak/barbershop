@@ -1,6 +1,9 @@
 .contacts-list {
   @extend %list;
-  margin-bottom: 44px;
+
+  @include for-size(mobile-only) {
+    margin-bottom: 44px;
+  }
 }
 
 .contacts-item {
@@ -44,19 +47,5 @@
 
   &.mail {
     text-decoration: underline;
-  }
-}
-
-.hours-box {
-  .text-label {
-    margin-bottom: 20px;
-    color: $white;
-    &::before {
-      background-color: $labelCl;
-    }
-  }
-  .hours-text {
-    line-height: 1.67;
-    color: $subtitleCl;
   }
 }

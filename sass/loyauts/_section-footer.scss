@@ -3,6 +3,17 @@
   padding-bottom: 44px;
   background-color: $primaryBg;
 
+  @include for-size(tablet) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .container {
+    @include for-size(tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
   .copy-text {
     font-weight: 600;
     font-size: 11px;

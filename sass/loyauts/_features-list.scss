@@ -5,13 +5,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    margin-left: auto;
+  }
 }
 
 .features-item {
   padding: 20px 32px;
   margin-right: 30px;
-
+  margin-bottom: 30px;
   width: calc((100% - 2 * 15px) / 2);
 
   @extend %title;
@@ -21,10 +25,6 @@
   text-align: center;
 
   background-color: $primaryBg;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
 
   &:nth-child(2n) {
     margin-right: 0;

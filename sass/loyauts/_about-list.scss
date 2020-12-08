@@ -1,0 +1,16 @@
+.about-list {
+  @extend %list;
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    margin-right: 30px;
+    width: calc((100%-30px) / 2);
+  }
+
+  .item:not(:last-child) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+}
