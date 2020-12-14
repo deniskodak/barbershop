@@ -1,9 +1,16 @@
 .section-features {
   @extend .section;
 
+  .container {
+    @include for-size(desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
+  }
   .features-box {
     margin-bottom: 44px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       max-width: 500px;
     }
   }
@@ -23,5 +30,9 @@
     font-size: 18px;
     line-height: 1.62;
     color: $secondaryCl;
+
+    @include for-size(desktop) {
+      line-height: 1.67;
+    }
   }
 }

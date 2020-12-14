@@ -1,7 +1,6 @@
 .section-contacts {
   @extend .section;
 
-  background-color: $secondaryBg;
   background-image: url('../images/section-contacts/contacts-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +25,11 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @include for-size(desktop) {
+      width: 575px;
+      padding-left: 100px;
+    }
   }
 
   .title {
@@ -45,15 +49,22 @@
   }
   .contacts-box {
     font-style: normal;
+    @include for-size(mobile-only) {
+      margin-bottom: 44px;
+    }
 
-    @include for-size(tablet) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 30px;
       width: calc((100% - 30px) / 2);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 70px;
     }
   }
 
   .hours-box {
-    @include for-size(tablet) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 30px) / 2);
     }
 

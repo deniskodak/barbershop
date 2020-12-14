@@ -1,9 +1,20 @@
 .team-list {
   @extend %list;
 
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .team-item {
-    &:not(:last-child) {
-      margin-bottom: 64px;
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 64px;
+      }
+    }
+
+    @include for-size(desktop) {
+      width: calc((100% - 2 * 30px) / 3);
     }
   }
 }

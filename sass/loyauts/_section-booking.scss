@@ -1,6 +1,12 @@
 .section-booking {
   @extend .section;
-  background-color: $secondaryBg;
+
+  .container {
+    @include for-size(desktop) {
+      width: 625px;
+      padding-right: 40px;
+    }
+  }
 
   .title {
     margin-bottom: 44px;

@@ -8,9 +8,23 @@
     width: calc((100%-30px) / 2);
   }
 
+  @include for-size(desktop) {
+    display: flex;
+    margin-right: 64px;
+    max-width: 570px;
+  }
+  .item {
+    @include for-size(desktop) {
+      width: calc((100% - 30px) / 2);
+    }
+  }
   .item:not(:last-child) {
     @media screen and (max-width: 1199px) and (min-width: 768px) {
       margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+      margin-right: 30px;
     }
   }
 }

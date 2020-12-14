@@ -1,25 +1,57 @@
 .section-hero {
   // background-color: rgba(25, 28, 38, 0.2);
-  background-image: url('../images/section-hero/hero-mobile.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/section-hero/hero-mobile@2x.jpg');
-  }
+  .container {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  @include for-size(tablet) {
-    background-image: url('../images/section-hero/hero-tablet.jpg');
-    background-position: 159px top;
+    background-image: url('../images/section-hero/hero-mobile.jpg');
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/section-hero/hero-tablet@2x.jpg');
+      background-image: url('../images/section-hero/hero-mobile@2x.jpg');
+    }
+
+    @include for-size(tablet) {
+      background-image: url('../images/section-hero/hero-tablet.jpg');
+      background-position: 157px top;
+      background-size: contain;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/section-hero/hero-tablet@2x.jpg');
+      }
+    }
+
+    @include for-size(desktop) {
+      background-image: url('../images/section-hero/hero-desktop.jpg');
+      background-position: 100px top;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/section-hero/hero-desktop@2x.jpg');
+      }
     }
   }
+
   .socials-list-company {
     display: none;
+
+    @include for-size(tablet) {
+      display: flex;
+      position: absolute;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      left: 39px;
+
+      padding: 37px 40px;
+    }
+    @include for-size(desktop) {
+      left: 15px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
   }
 }

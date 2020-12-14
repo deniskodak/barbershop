@@ -15,6 +15,10 @@
 
     @extend %title;
     font-size: 28px;
+
+    @include for-size(desktop) {
+      font-size: 42px;
+    }
   }
   .sub-title {
     margin-bottom: 20px;
@@ -22,6 +26,11 @@
     font-size: 16px;
     line-height: 1.62;
     color: $secondaryCl;
+
+    @include for-size(desktop) {
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
 
   .text {
@@ -38,5 +47,9 @@
 .about-content {
   @include for-size(tablet) {
     width: calc((100%-30px) / 2);
+  }
+
+  @include for-size(desktop) {
+    max-width: 500px;
   }
 }

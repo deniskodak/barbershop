@@ -1,9 +1,5 @@
 .contacts-list {
   @extend %list;
-
-  @include for-size(mobile-only) {
-    margin-bottom: 44px;
-  }
 }
 
 .contacts-item {

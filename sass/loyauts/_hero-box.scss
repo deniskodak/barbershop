@@ -3,6 +3,12 @@
   padding-bottom: 183px;
   max-width: 306px;
 
+  @include for-size(tablet) {
+    padding-top: 272px;
+    padding-bottom: 245px;
+    max-width: 355px;
+    margin-left: 240px;
+  }
   .text-label {
     margin-bottom: 20px;
   }

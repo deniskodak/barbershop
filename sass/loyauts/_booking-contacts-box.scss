@@ -1,0 +1,6 @@
+.booking-contacts-box {
+  background-color: $secondaryBg;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}

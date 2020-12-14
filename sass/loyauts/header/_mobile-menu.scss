@@ -48,6 +48,10 @@
     &:focus {
       color: $accentCl;
     }
+
+    &.current {
+      color: $accentCl;
+    }
   }
   .tel-link {
     display: inline-block;
